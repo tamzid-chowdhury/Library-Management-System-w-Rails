@@ -1,24 +1,10 @@
-# README
+# Library Management System w Ruby on Rails
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Library Administration System using Ruby on Rails. Simple GUI to add, checkout, and search for books by name, author, ISBN
 
-Things you may want to cover:
+### Administrator 
+![Imgur Image](https://i.imgur.com/gN5fjEd.png)
 
-* Ruby version
+### Patron
+![Imgur Image](https://i.imgur.com/3HnN0FE.png)
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
