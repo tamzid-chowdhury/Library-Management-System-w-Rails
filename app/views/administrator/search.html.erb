@@ -1,0 +1,11 @@
+<h1> Search for books </h1>
+
+<%= form_tag(administrator_search_results_path, {method: :get}) do %>
+  Title <%= text_field_tag :title, params[:title] %>
+  Author <%= text_field_tag :author, params[:author] %>
+  ISBN <%= text_field_tag :ISBN, params[:ISBN] %>
+  <%= submit_tag 'Search' %>
+<% end %>
+
+
+<%= link_to 'Back to admin home page', administrator_index_path %>

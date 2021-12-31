@@ -1,0 +1,44 @@
+<h2> Edit Book </h2>
+
+<%= form_with(model: @book, local: true) do |form| %>
+  <% if @book.errors.any? %>
+      <div id="error_explanation">
+        <p>
+          error/s prohibited
+          this book from being saved: try again!
+        </p>
+        <ul>
+          <% @book.errors.full_messages.each do |msg| %>
+            <li><%= msg %></li>
+          <% end %>
+        </ul>
+      </div>
+    <% end %>
+
+<p>
+    <%= form.label :title %><br>
+    <%= form.text_field :title %>
+  </p>
+
+  <p>
+    <%= form.label :author %><br>
+    <%= form.text_field :author %>
+  </p>
+
+  <p>
+    <%= form.label :ISBN %><br>
+    <%= form.text_field :ISBN %>
+  </p>
+
+  <p>
+    <%= form.label :copies %><br>
+    <%= form.text_field :copies %>
+  </p>
+
+  <p>
+    <%= form.submit %>
+  </p>
+
+<% end %>
+
+<%= link_to 'Back to search', administrator_search_path %>

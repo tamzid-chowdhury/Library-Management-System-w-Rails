@@ -1,0 +1,30 @@
+<p>
+<strong>Title:</strong>
+<%=	@book.title %>
+</p>
+
+<p>
+<strong>Author:</strong>
+<%=	@book.author %>
+</p>
+
+<p>
+<strong>ISBN:</strong>
+<%=	@book.ISBN %>
+</p>
+
+
+<% @book.reviews.each do |review| %>
+  <p>
+    <strong>Name:</strong>
+    <%= review.name %>
+  </p>
+ 
+  <p>
+    <strong>Comment:</strong>
+    <%= review.review %>
+  </p>
+
+<% end %>
+
+<%= link_to 'Back to searching', patron_index_path %>
